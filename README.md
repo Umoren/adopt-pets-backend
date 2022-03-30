@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prerequisites
+You might need to have this installed to run this project
+- Ruby >= 2.7
+- Rails
+- gem
+- bundler
 
-Things you may want to cover:
+## Run the following commands
 
-* Ruby version
+- ### `bundler install` to install all gems in Gemfile
+- ### `rails db:schema:load`
+- ### `rails db:migrate` to run migrations
+- ### `rails db:seed` to load seeded data
+- ### `rails server` to run the rails server
 
-* System dependencies
+Some concepts i had to go through to work on this:
 
-* Configuration
+* Ruby Basics
 
-* Database creation
+* Getting Started with Rails
 
-* Database initialization
+* Database setup
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+* How controllers, models and serializers work
 
-* Deployment instructions
+* Deploying a rails app
 
 * ...
