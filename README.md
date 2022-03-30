@@ -15,11 +15,36 @@ You might need to have this installed to run this project
 - ### `rails db:seed` to load seeded data
 - ### `rails server` to run the rails server
 
-Some concepts i had to go through to work on this:
+## Endpoints
+
+- ### Adoptions
+    - GET `/adoptions`
+    - GET `/adoptions/1`
+    - POST `/adoptions`
+      - body: user_id, pet_id
+    - PATCH/PUT `/adoptions/1`
+    - DELETE `/adoptions/1`
+- ### Auth
+  - User controller serves as registration
+    - POST `/users`
+      - body: name, username, password, location, gender
+    - POST `/login`
+- ### Users
+    - PATCH/PUT /users/1
+    - DELETE /users/1
+- ### Pets
+    - GET /pets
+    - GET /pets/1
+    - POST /pets
+      - body: name, age, breed, img, location
+
+## Some concepts i had to go through to work on this:
 
 * Ruby Basics
 
 * Getting Started with Rails
+
+* CORS
 
 * Database setup
 
@@ -30,3 +55,8 @@ Some concepts i had to go through to work on this:
 * Deploying a rails app
 
 * ...
+
+## TODOS
+
+* Use UUID for param id
+* Implement Authentication guards
