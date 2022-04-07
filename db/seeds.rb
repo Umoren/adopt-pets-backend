@@ -15,7 +15,7 @@ Pet.reset_pk_sequence
 
 51.times do 
     Pet.create(name: Faker::Creature::Dog.name, breed: Faker::Creature::Dog.breed, age:Faker::Creature::Dog.age, location: 
-    "NYC", img:"")
+    Faker::Nation.nationality, img:"")
 end
 
 
