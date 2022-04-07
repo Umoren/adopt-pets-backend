@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env ruby2.7
 # frozen_string_literal: true
 
 #
@@ -84,11 +84,6 @@ m = Module.new do
     ENV["BUNDLE_GEMFILE"] ||= gemfile
 
     activate_bundler
-  end
-
-  def shebang_fix
-    ENV["BUNDLE_SHEBANG"] ||= ruby
-  
   end
 
   def activate_bundler
