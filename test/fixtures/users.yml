@@ -3,13 +3,11 @@
 one:
   name: MyString
   username: MyString
-  password_digest: MyString
-  location: MyString
   gender: MyString
+  location: MyString
 
 two:
   name: MyString
   username: MyString
-  password_digest: MyString
-  location: MyString
   gender: MyString
+  location: MyString
