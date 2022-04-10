@@ -13,9 +13,9 @@ Pet.destroy_all
 Pet.reset_pk_sequence
 
 
-30.times do
+51.times do 
     Pet.create(name: Faker::Creature::Dog.name, breed: Faker::Creature::Dog.breed, age:Faker::Creature::Dog.age, location: 
-    "NYC", img:"")
+    Faker::Nation.nationality, img:"")
 end
 
 
@@ -26,4 +26,3 @@ Pet.all.each do |pet|
         img: pet_message
     ) 
 end
-

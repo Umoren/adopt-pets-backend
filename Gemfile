@@ -10,7 +10,7 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -29,8 +29,6 @@ gem "jbuilder"
 
 gem "faker"
 
-gem "rack-cors"
-
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'active_model_serializers'
@@ -45,6 +43,7 @@ gem 'jwt', '~>2.2'
 
 gem 'dotenv-rails', "~> 2.7"
 
+gem 'friendly_id', '~> 5.4.0'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -78,12 +77,19 @@ group :development do
   gem "web-console"
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem "sqlite3", "~> 1.4"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+end
+
+group :production do 
+  gem 'pg'
+  gem 'rails_12factor'
+
 end
 
 group :test do
